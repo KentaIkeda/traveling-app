@@ -3,6 +3,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import AttractionItem from './AttractionItem';
 import 'swiper/css';
+
 export default function SwiperAttraction() {
   // DB使って管理する予定
   const attractionData = [
@@ -63,8 +64,12 @@ export default function SwiperAttraction() {
       },
     },
   ];
+
   return (
-    <Swiper>
+    <Swiper
+      spaceBetween={100}
+      slidesPerView={3.5}
+    >
       {attractionData.map((data) => {
         return (
           <SwiperSlide key={data.id}>

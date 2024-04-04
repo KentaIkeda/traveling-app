@@ -27,7 +27,7 @@ export default function AttractionItem({
   const attractionAddress = formatAddress();
 
   return (
-    <article className='bg-neutral-200 w-1/5 h-96 rounded-md relative shadow-sm'>
+    <article className='bg-neutral-200 w-full h-96 rounded-md relative shadow-lg'>
       <img
         className='aspect-video w-full h-auto rounded-t-md'
         src='https://placehold.jp/160x90.png'

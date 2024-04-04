@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.swiper {
+  padding: 0 1rem 1rem !important;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
