@@ -1,26 +1,11 @@
 import { Star } from 'lucide-react';
-
-interface AttractionItem {
-  name: string;
-  businessHour: {
-    open: number;
-    close: number;
-  };
-  address: {
-    prefecture: string; // 宮城県
-    city1: string; // 角田市
-    city2?: string; // ～～区等
-    streetAddress1: string; // 横倉金谷31-41
-    streetAddress2?: string; // アパート・マンション情報等　一軒家は必要なし
-    postalCode: number | string; // 郵便番号
-  };
-}
+import { AttractionItemType } from '@/app/types/type';
 
 export default function AttractionItem({
   name,
   address,
   businessHour,
-}: AttractionItem) {
+}: AttractionItemType) {
   function formatAddress() {
     const pref = address.prefecture;
     const city1 = address.city1;
@@ -42,9 +27,9 @@ export default function AttractionItem({
   const attractionAddress = formatAddress();
 
   return (
-    <article className='bg-neutral-200 w-1/5 h-96 rounded-md relative'>
+    <article className='bg-neutral-200 w-1/5 h-96 rounded-md relative shadow-sm'>
       <img
-        className='aspect-video w-full h-auto'
+        className='aspect-video w-full h-auto rounded-t-md'
         src='https://placehold.jp/160x90.png'
         alt=''
       />

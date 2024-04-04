@@ -8,5 +8,5 @@ interface H2Props {
 }
 
 export default function H2({ title, className }: H2Props) {
-  return <h2 className={cn('font-bold', className)}>{title}</h2>;
+  return <h2 className={cn('font-bold text-lg mb-14', className)}>{title}</h2>;
 }
