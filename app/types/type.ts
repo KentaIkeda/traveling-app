@@ -5,11 +5,11 @@ export type AttractionItemType = {
     close: number;
   };
   address: {
-    prefecture: string; // 宮城県
-    city1: string; // 角田市
-    city2?: string; // ～～区等
-    streetAddress1: string; // 横倉金谷31-41
-    streetAddress2?: string; // アパート・マンション情報等　一軒家は必要なし
-    postalCode: number | string; // 郵便番号
+    prefecture: string;
+    city1: string;
+    city2?: string;
+    streetAddress1: string;
+    streetAddress2?: string;
+    postalCode: number | string;
   };
 };

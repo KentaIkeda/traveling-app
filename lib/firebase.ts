@@ -3,13 +3,13 @@ import { getAnalytics } from 'firebase/analytics';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyA_5Jd6y3gR2pXc6RwTfxEWhrNw6XUoJ0U',
-  authDomain: 'traveling-app-fb116.firebaseapp.com',
-  projectId: 'traveling-app-fb116',
-  storageBucket: 'traveling-app-fb116.appspot.com',
-  messagingSenderId: '331315090637',
-  appId: '1:331315090637:web:7ed0e2dcd1d9c2742c4584',
-  measurementId: 'G-W8MKS9V7V3',
+  apiKey: process.env.FIREBASE_API,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STRAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID,
+  measurementId: process.env.MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
